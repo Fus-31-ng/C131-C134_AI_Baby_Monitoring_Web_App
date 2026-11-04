@@ -1,0 +1,66 @@
+body {
+
+    background-size: cover;
+
+    background-position: center;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+.heading {
+
+    font-size: 23px;
+
+    width: 100%;
+
+    margin: 0px;
+
+}
+
+
+#status, #baby_status, #number_of_objects, #start_model {
+
+    font-size: 18px;
+
+    margin: 10px;
+
+}
+
+
+.instructions {
+
+    font-size: 18px;
+
+    background-color: white;
+
+    padding: 15px;
+
+    width: 80%;
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px grey;
+
+}
+
+
+canvas {
+
+    box-shadow: 10px 10px 10px grey;
+
+    border-radius: 10px;
+
+    margin-top: 30px;
+
+}
+
+
+#start_model {
+
+    padding: 12px 25px;
+
+}

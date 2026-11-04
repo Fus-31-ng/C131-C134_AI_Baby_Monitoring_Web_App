@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>AI Baby Monitoring Web App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+<body background="Background.jpg">
+
+    <center>
+
+        <h1 class="btn btn-info heading">
+            AI Baby Monitoring Web App
+        </h1>
+
+
+        <br><br>
+
+
+        <h3>
+            Keep Your Baby Safe!
+        </h3>
+
+
+        <p class="instructions">
+            This app monitors the room using your webcam.
+            If a person is not detected, an alarm will play.
+            When a person is detected, the alarm will stop.
+        </p>
+
+
+        <h3 id="status" class="btn btn-danger">
+            Status : Waiting to Start
+        </h3>
+
+
+        <h3 id="baby_status" class="btn btn-warning">
+            Baby Not Monitored
+        </h3>
+
+
+        <h3 id="number_of_objects" class="btn btn-info">
+            Number of Persons/Objects Detected : 0
+        </h3>
+
+
+        <br><br>
+
+
+        <button onclick="start()" class="btn btn-success" id="start_model">
+            Start Monitoring
+        </button>
+
+
+    </center>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
